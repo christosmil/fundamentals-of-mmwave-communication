@@ -47,13 +47,12 @@ hold off;
 % Style the subplot.
 set(gca, FontSize=fontsize, FontName=fontname);
 thetatickformat('degrees');
-title(subplot_title, FontSize=fontsize_title, FontName=fontname, ...
-    FontWeight='normal');
+title(subplot_title, FontSize=fontsize_title, FontWeight='normal');
 legend_str = '';
 for iter=1:length(num_arrays)
     legend_str = [legend_str; sprintf('%d array(s)', num_arrays(iter))];
 end
-legend(legend_str, FontName=fontname);
+legend(legend_str);
 set(gca, ThetaZeroLocation='top', Thetalim=[-90 90], ...
-    FontSize=fontsize_axis, FontName=fontname);
+    FontSize=fontsize_axis);
 end
