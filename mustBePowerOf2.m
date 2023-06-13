@@ -1,8 +1,9 @@
 function mustBePowerOf2(numbers)
-% mustBePowerOf2(number) validates if a number is a power of 2.
+% mustBePowerOf2(numbers) validates if all the numbers of an array are a
+% power of 2.
 %
 % The function receives the following input arguments.
-%   number      array of numbers to check
+%   numbers     array of numbers to check
 %
 % The function throws an error if any number of the array is not a power of
 % 2.
